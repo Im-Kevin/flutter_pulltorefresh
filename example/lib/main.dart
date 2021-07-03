@@ -19,6 +19,8 @@ class MyApp extends StatelessWidget {
       headerBuilder: () => MaterialClassicHeader(),
       footerBuilder: () => ClassicFooter(),
       enableLoadingWhenNoData: false,
+      enableRefreshVibrate: false,
+      enableLoadMoreVibrate: false,
       shouldFooterFollowWhenNotFull: (state) {
         // If you want load more with noMoreData state ,may be you should return false
         return false;
@@ -57,6 +59,11 @@ class MyApp extends StatelessWidget {
           const Locale('it'),
           const Locale('ru'),
           const Locale('fr'),
+          const Locale('es'),
+          const Locale('nl'),
+          const Locale('sv'),
+          const Locale('pt'),
+          const Locale('ko'),
         ],
         locale: const Locale('zh'),
         localeResolutionCallback:
